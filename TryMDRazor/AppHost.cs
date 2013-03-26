@@ -1,5 +1,8 @@
 using System.Reflection;
 using ServiceStack.WebHost.Endpoints;
+using ServiceStack.Logging;
+using ServiceStack.Logging.Support.Logging;
+using ServiceStack.Razor;
 
 namespace TryMDRazor
 {
@@ -11,6 +14,8 @@ namespace TryMDRazor
 
         public override void Configure(Funq.Container container)
         {
+            LogManager.LogFactory = new ConsoleLogFactory();
+            Plugins.Add(new RazorFormat());
         }
     }
 }
