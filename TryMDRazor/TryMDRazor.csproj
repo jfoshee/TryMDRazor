@@ -90,9 +90,10 @@
     <Folder Include="Views\" />
     <Folder Include="Services\" />
     <Folder Include="Transfer\" />
-    <Folder Include="temp\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\Example.md" />
+    <None Include="Views\_Layout.cshtml" />
+    <None Include="Views\style.css" />
   </ItemGroup>
 </Project>
